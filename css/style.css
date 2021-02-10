@@ -9,6 +9,27 @@
     box-sizing: border-box;
 }
 
+
+
 body{
-    background: grey;
+    background: rgb(255, 255, 255);
+    font-family: 'Slabo 27px', serif;
+}
+
+.circle{
+    border-radius:50%;
+    border: 20px solid black;
+    }
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+p{
+    font-size: 20px;
+}
+#dev-logo{
+    padding-left: 0px;
+    padding-right: 0px;
 }
