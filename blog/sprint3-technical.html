@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jared's EDA Blog</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <!--header row-->
+    <div id="box-container-top">
+        <div id="sub-container">
+            <div id="header-box-left">
+                <a href="https://devacademy.co.nz/"><img style="width:100px;"
+                        src="../images/EDA-square-logo-uai-258x258.png" alt="EDA logo"></a>
+            </div>
+            <div id="header-box-right">
+                <h1 id="header-name">Jared Pinfold</h1>
+                <h3 id="header-subtitle">EDA Student Blog</h3>
+            </div>
+        </div>
+    </div>
+    <!--main body-->
+    <div id="box-container-middle">
+        <div id="blog-post-content">
+            <h2 style="text-align: center;">JavaScript Fundamentals</h2>
+            <br>
+            <h3>What's the difference between HTML and CSS?</h3>
+            <p>Let's imagine HTML is a collection of objects. An analogy might be they're pieces of a paper doll, but all in a row.</p>
+            <p>Carry on that extremely fragile analogy, CSS is a list of instructions on how to colour in the pieces and arrange them together to make a person shape</p>
+            <img src="../images/html-jared.png" alt="a selection of stick figure body parts">
+            <img src="../images/css-jared.png" alt="a person made of composite bits shambolically created in MSPaint">
+            
+            <h3>Control flow and loops</h3>
+            <p>Control flow is the order in which the computer executes lines of code, and it is generally sequential from top to bottom, but can be modified by the use of loops and functions.</p>
+            <p>The order in which the code is executed is very important. Imagine if you put your shoes on before you put your socks on. Chaos. Chaos of the same magnitude as if you went to return the value of a variable which had not been declared yet.</p>
+            <p>Loops allow you to run the same code over and over until certain criteria are met. A real world example would be:</p>
+            <div style="justify-content: left;">
+            <ol>
+                <li  class="numbered-list";>Go to bed late</li>
+                <li  class="numbered-list";>Alarm goes off</li>
+                <li  class="numbered-list highlight-loop";>Will you be late to work if you hit Snooze? - If <b>no</b>, carry on. If <b>yes</b>, skip to step 8</li>
+                <li  class="numbered-list highlight-loop";>Hit Snooze</li>
+                <li  class="numbered-list highlight-loop";>Sleep</li>
+                <li  class="numbered-list highlight-loop";>Alarm goes off</li>
+                <li  class="numbered-list highlight-loop";>Return to step 3</li>
+                <li  class="numbered-list";>Get up</li>
+            </ol>
+            </div>
+            
+            <h3>What is the DOM?</h3>
+            <p>The "Document Object Model", or the DOM is the framework which allows the HTML, CSS and Javascript components of a website to interact with eachother. The DOM is created by the browser itself when the webpage is loaded.</p>
+            <p>It's easy to visualise the DOM as a tree, with many branches (or nodes) coming out from each broad category. Each div and image that exists in the HTML is a node, for example, as is each class or id.</p>
+            <p>You can also think of the DOM as a map. You can use that DOM to allow JavaScript functionality to interact with different parts of the website by providing directions via a path starting at a high-level item in the tree, and adding more specificity as it goes. eg: document.getElementByID('jared') means we're starting at the Document level (kind of the basic catch-all where most content lives), followed by specifying we're looking for an ID, and then specifying the particular ID we're looking for. Once I've established a "pathway" to that ID, I can ineract with it and add functionality to it.</p>
+            
+            <h3>Accessing Arrays vs. accessing Objects</h3>
+            <p>Arrays and Objects are two different kinds of variables which contain multiple pieces of data inside them.</P>
+            <p>You could think of an array as a list of things, and you access the items on the list but specify the position of the thing on the list. The positions are referred to numerically, in a square bracket, and the numbered list starts at 0, so the first thing in the list is 0. </p>
+            <img src="../images/array-code.png" alt="Code showing an array of 3 items, and a variable referring to item 0 of the array">
+            <p>And you can think of an Object as a 2-column table of information where each item of data has a category title. When referring to an item in the Object, you specify the name of the item you're looking for.</p>
+            <p>There are 2 ways to specify an item in the object: <b>dot notation</b>, and <b>square bracket notation</b>. Dot notation is faster to type, so is the preferred method, but can't handle any spaces in the name. Square bracket notation can handle spaces, but is slightly more effort to type out.</p>
+            <img src="../images/object-code.png" alt="Code showing an object with 3 items, and two examples of variable referring to an item in the object, one with dot notation and the other with square bracket notation.">
+            
+            <h3>What are functions, and why are they useful?</h3>
+            <p>A function is a self contained piece of code which you write once and then can re-use and use different inputs for it each time.</p>
+            <p>Imagine it like this: You have a list of excercises you do at the gym, and in your day planner you could itemise them out one by one for every visit to the gym, or you can just write "Arms day", and you'll do all of the individual exercises you do at the gym are written in your exercise plan called "Arms day" without having to write out each individual exercise on the calendar... now, you could also have an extra bit of information that you put on the calendar, like "Arms day (normal)" or "Arms day (increase)", and that tells you to do the same set of exercises but with different weights in each instance.</p>
+            
+            
+        </div>
+    </div>
+    <!--project buttons-->
+    <div id="box-container">
+        <a href="../core-home.html">
+            <div id="box-1">
+                <img src="../images/head-puzzle.png" alt="A jigsaw puzzle of a human head">
+                <h3>Core</h3>
+                <p>Core Content</p>
+            </div>
+        </a>
+        <a href="../tech-home.html">
+            <div id="box-2">
+                <img src="../images/laptop-on-fire.png" alt="A laptop ablaze">
+                <h3>Tech</h3>
+                <p>Tech Content</p>
+            </div>
+        </a>
+        <a href="../about-me.html">
+            <div id="box-3">
+                <img src="../images/jp.png" alt="Jared looking amazing">
+                <h3>12 Weird CSS Tricks</h3>
+                <p>Number 10 will shock you</p>
+            </div>
+        </a>
+    </div>
+</body>
+
+</html>
