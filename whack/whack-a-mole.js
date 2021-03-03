@@ -29,7 +29,7 @@ function forceDifferent() {
 function createImage () {
   gameInProgress = true
   var image = document.createElement("IMG")
-  image.setAttribute("src", "mole.png")
+  image.setAttribute("src", "mole.PNG")
   image.setAttribute("onClick", "moveMole()")
   let x = document.getElementById("table").rows[row].cells;
   x[column].appendChild(image)
