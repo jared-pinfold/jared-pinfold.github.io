@@ -4,7 +4,7 @@
 
 console.log("Inflate The Unicorn!")
 
-// Create a variable to house the status of each unicorn
+// Create variables to house the status of each unicorn
 var unicorn1 = {
   inflationStatus: 0,
   idTag: "unicorn1",
@@ -20,6 +20,7 @@ var unicorn3 = {
   idTag: "unicorn3",
 }
 
+// Create a variable to point to the unicorn images
 var images = [
   "./images/unicorn-0.png",
   "./images/unicorn-1.png",
@@ -27,8 +28,6 @@ var images = [
   "./images/unicorn-3.png"
 ]
 
-// var inflateAudio = document.getElementById("inflate");
-// var deflateAudio = document.getElementById("deflate");
 function inflateAudio () {
   document.getElementById("inflate").play()
 }
@@ -38,7 +37,6 @@ function deflateAudio () {
 }
 
 function inflate(unicornId) {
-  // check status of unicorn - if at 3, do nothing, otherwise switch to next photo and increment status
   if (unicornId.inflationStatus < 3) {
     unicornId.inflationStatus ++
     document.getElementById(unicornId.idTag).src = images[unicornId.inflationStatus]
